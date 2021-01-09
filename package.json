@@ -1,6 +1,6 @@
 {
   "homepage": "https://chaitanya360.github.io/Algo_rythm",
-  "name": "Algo_rythm",
+  "name": "algorythm",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,10 +15,9 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    
+    "predeploy": "npm run build",    
     "deploy": "gh-pages -d build",
  "build": "react-scripts build",
-    "predeploy": "npm run build",
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
