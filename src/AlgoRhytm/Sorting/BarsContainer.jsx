@@ -97,29 +97,33 @@ const BarsContainer = (props) => {
                   {/* {e[0].toUpperCase() + e.substring(1)} */ e.value}
                 </span>
               ))}
-              <span
-                style={{
-                  display: "inline-block",
-                  right: "10px",
-                  position: "absolute",
-                }}
-                className="algo_option_container"
-              >
-                <button
-                  className="algo_option"
-                  onClick={onSearchingPressed}
-                  style={getSearchingBtnStyle()}
+              {windoWidth > 700 ? (
+                <span
+                  style={{
+                    display: "inline-block",
+                    right: "10px",
+                    position: "absolute",
+                  }}
+                  className="algo_option_container"
                 >
-                  Searching
-                </button>
-                <button
-                  className="mr-3 algo_option"
-                  onClick={onSortingPressed}
-                  style={getSortingBtnStyle()}
-                >
-                  Sorting
-                </button>
-              </span>
+                  <button
+                    className="algo_option"
+                    onClick={onSearchingPressed}
+                    style={getSearchingBtnStyle()}
+                  >
+                    Searching
+                  </button>
+                  <button
+                    className="mr-3 algo_option"
+                    onClick={onSortingPressed}
+                    style={getSortingBtnStyle()}
+                  >
+                    Sorting
+                  </button>
+                </span>
+              ) : (
+                ""
+              )}
             </div>
 
             <button onClick={OnGenerateButtonPressed} className="driver_btn">
@@ -135,7 +139,7 @@ const BarsContainer = (props) => {
             <button className="driver_btn " onClick={OnOrientationPressed}>
               V/H
             </button>
-            {/* <br /> */}
+            {windoWidth > 500 ? "" : <br />}
             <span style={{ marginLeft: "20px", color: "white" }}>
               <span>Speed</span>
               <Slider
