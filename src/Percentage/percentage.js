@@ -40,9 +40,7 @@ const Percentage = () => {
             color: "white",
           }}
           id="result"
-        >
-          34
-        </div>
+        ></div>
       </ul>
     </div>
   );
