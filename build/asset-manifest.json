@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Algo_rythm/static/css/main.79da86b9.chunk.css",
-    "main.js": "/Algo_rythm/static/js/main.0b2042e3.chunk.js",
-    "main.js.map": "/Algo_rythm/static/js/main.0b2042e3.chunk.js.map",
+    "main.css": "/Algo_rythm/static/css/main.331191fb.chunk.css",
+    "main.js": "/Algo_rythm/static/js/main.068d421c.chunk.js",
+    "main.js.map": "/Algo_rythm/static/js/main.068d421c.chunk.js.map",
     "runtime-main.js": "/Algo_rythm/static/js/runtime-main.5b9b415a.js",
     "runtime-main.js.map": "/Algo_rythm/static/js/runtime-main.5b9b415a.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/Algo_rythm/static/css/2.20aa2d7b.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.c4c98dfa.chunk.js.map": "/Algo_rythm/static/js/2.c4c98dfa.chunk.js.map",
     "index.html": "/Algo_rythm/index.html",
     "static/css/2.20aa2d7b.chunk.css.map": "/Algo_rythm/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.79da86b9.chunk.css.map": "/Algo_rythm/static/css/main.79da86b9.chunk.css.map",
+    "static/css/main.331191fb.chunk.css.map": "/Algo_rythm/static/css/main.331191fb.chunk.css.map",
     "static/js/2.c4c98dfa.chunk.js.LICENSE.txt": "/Algo_rythm/static/js/2.c4c98dfa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5b9b415a.js",
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.c4c98dfa.chunk.js",
-    "static/css/main.79da86b9.chunk.css",
-    "static/js/main.0b2042e3.chunk.js"
+    "static/css/main.331191fb.chunk.css",
+    "static/js/main.068d421c.chunk.js"
   ]
 }

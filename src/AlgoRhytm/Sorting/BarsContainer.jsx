@@ -139,6 +139,36 @@ const BarsContainer = (props) => {
             <button className="driver_btn " onClick={OnOrientationPressed}>
               V/H
             </button>
+            {windoWidth < 700 ? (
+              <span
+                style={{
+                  display: "inline-block",
+                  right: "10px",
+                  position: "absolute",
+                }}
+                className="algo_option_container"
+              >
+                {isSortingSelected ? (
+                  <button
+                    className="algo_option"
+                    onClick={onSearchingPressed}
+                    style={getSearchingBtnStyle()}
+                  >
+                    Searching
+                  </button>
+                ) : (
+                  <button
+                    className="mr-3 ml-0 algo_option"
+                    onClick={onSortingPressed}
+                    style={getSortingBtnStyle()}
+                  >
+                    Sorting
+                  </button>
+                )}
+              </span>
+            ) : (
+              ""
+            )}
             {windoWidth > 500 ? "" : <br />}
             <span style={{ marginLeft: "20px", color: "white" }}>
               <span>Speed</span>

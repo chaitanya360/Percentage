@@ -24,6 +24,7 @@ const Array = (props) => {
     onSearchingPressed,
     onSortingPressed,
     isSortingSelected,
+    windoWidth,
   } = props;
 
   function Result() {
@@ -146,29 +147,33 @@ const Array = (props) => {
           </Button>
 
           <Sort />
-          <span
-            style={{
-              display: "inline-block",
-              right: "10px",
-              position: "absolute",
-            }}
-            className="algo_option_container"
-          >
-            <button
-              className="algo_option"
-              onClick={onSearchingPressed}
-              style={getSearchingBtnStyle()}
+          {windoWidth > 700 ? (
+            <span
+              style={{
+                display: "inline-block",
+                right: "10px",
+                position: "absolute",
+              }}
+              className="algo_option_container"
             >
-              Searching
-            </button>
-            <button
-              className="mr-3 algo_option"
-              onClick={onSortingPressed}
-              style={getSortingBtnStyle()}
-            >
-              Sorting
-            </button>
-          </span>
+              <button
+                className="algo_option"
+                onClick={onSearchingPressed}
+                style={getSearchingBtnStyle()}
+              >
+                Searching
+              </button>
+              <button
+                className="mr-3 algo_option"
+                onClick={onSortingPressed}
+                style={getSortingBtnStyle()}
+              >
+                Sorting
+              </button>
+            </span>
+          ) : (
+            ""
+          )}
         </div>
         <div className="search_type pl-2">
           <button
@@ -185,6 +190,37 @@ const Array = (props) => {
           >
             Binary Search
           </button>
+
+          {windoWidth < 700 ? (
+            <span
+              style={{
+                display: "inline-block",
+                right: "10px",
+                position: "absolute",
+              }}
+              className="algo_option_container"
+            >
+              {isSortingSelected ? (
+                <button
+                  className="algo_option"
+                  onClick={onSearchingPressed}
+                  style={getSearchingBtnStyle()}
+                >
+                  Searching
+                </button>
+              ) : (
+                <button
+                  className="mr-3 ml-0 algo_option mt-3"
+                  onClick={onSortingPressed}
+                  style={getSortingBtnStyle()}
+                >
+                  Sorting
+                </button>
+              )}
+            </span>
+          ) : (
+            ""
+          )}
 
           <div className="pl-3 container_top2" style={{ display: "inline" }}>
             <span>

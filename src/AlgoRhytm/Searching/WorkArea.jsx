@@ -336,6 +336,7 @@ class WorkArea extends Component {
           handleonBinaryPressed={this.handleonBinaryPressed}
           isSortingSelected={this.props.isSortingSelected}
           onSearchingPressed={this.props.onSearchingPressed}
+          windoWidth={window.innerWidth}
           onSortingPressed={this.props.onSortingPressed}
         >
           <this.ShowComparisation />

@@ -132,26 +132,9 @@
   margin-left: 10px;
   padding: 1px 15px;
   margin-bottom: 10px;
+  font-size: smaller;
 }
 
 .algo_option:hover {
   border: 2px solid rgba(227, 76, 241, 1);
-}
-
-@media only screen and (max-width: 1000px) {
-  .algo_option_container {
-    position: absolute;
-    z-index: 1;
-    display: none;
-    bottom: 0px;
-    padding-top: 10px;
-    /* background-color: blueviolet; */
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .algo_option_container {
-    position: absolute;
-    display: inline-block;
-  }
 }

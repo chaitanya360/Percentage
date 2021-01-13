@@ -6,10 +6,11 @@ import "./index.css";
 // import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AlgoIndex from "./AlgoRhytm/AlgoIndex.js";
+import Percentage from "./Percentage/percentage.js";
 
 ReactDOM.render(
   <React.StrictMode>
-    <AlgoIndex />
+    <Percentage />
   </React.StrictMode>,
   document.getElementById("root")
 );
